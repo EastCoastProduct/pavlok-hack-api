@@ -7,6 +7,9 @@ var controllers = require('../controllers');
 router.route('/')
   .get(controllers.utils.status);
 
+router.route('/status')
+  .get(controllers.utils.status);
+
 router.route('/codeship/:id/:type/:strength')
   .post(controllers.pavloks.webhooks.codeship);
 
