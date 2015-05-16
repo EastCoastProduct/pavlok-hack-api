@@ -16,7 +16,7 @@ var codeship = function(req, res) {
   }
 };
 
-var zapier = function(req) {
+var zapier = function(req, res) {
   var id = req.params.id;
   var type = req.params.type;
   var strength = req.params.strength;
@@ -24,6 +24,7 @@ var zapier = function(req) {
   pavlok.init({objectId: id});
 
   pavlok[type](strength);
+  res.status(200).json({});
 };
 
 module.exports = {
