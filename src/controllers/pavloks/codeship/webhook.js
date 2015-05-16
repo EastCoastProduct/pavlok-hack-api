@@ -3,6 +3,8 @@
 var request = require('request');
 
 function webhook(req, res) {
+  console.log(req.body);
+
   var id = req.params.id;
   var type = req.params.type;
   var strength = req.params.strength;
