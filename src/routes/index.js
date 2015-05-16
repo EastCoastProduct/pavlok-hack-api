@@ -21,3 +21,5 @@ router.route('*')
   .all(controllers.utils.catch404);
 
 module.exports = router;
+
+console.log('Break!');
