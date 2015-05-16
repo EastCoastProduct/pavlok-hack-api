@@ -8,7 +8,10 @@ router.route('/status')
   .get(controllers.utils.status);
 
 router.route('/codeship/:id/:type/:strength')
-  .post(controllers.pavloks.codeship.webhook);
+  .post(controllers.pavloks.webhooks.codeship);
+
+router.route('/zapier/:id/:type/:strength')
+  .post(controllers.pavloks.webhooks.zapier);
 
 // catch all not matched requests
 router.route('*')

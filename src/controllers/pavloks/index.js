@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  codeship: require('./codeship')
+  webhooks: require('./webhooks')
 };
