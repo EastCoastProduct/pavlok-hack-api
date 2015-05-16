@@ -27,6 +27,8 @@ var zapier = function(req, res) {
   res.status(200).json({});
 };
 
+console.log('Boom!');
+
 module.exports = {
   codeship: codeship,
   zapier: zapier
