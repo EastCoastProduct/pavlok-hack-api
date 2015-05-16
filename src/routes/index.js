@@ -17,6 +17,4 @@ router.route('/zapier/:id/:type/:strength')
 router.route('*')
   .all(controllers.utils.catch404);
 
-console.log('boom!');
-
 module.exports = router;
