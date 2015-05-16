@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 var controllers = require('../controllers');
 
-router.route('/status')
+router.route('/')
   .get(controllers.utils.status);
 
 router.route('/codeship/:id/:type/:strength')
