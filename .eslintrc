@@ -1,0 +1,36 @@
+{
+  // To give you an idea how to override rule options:
+  "rules": {
+    "strict": [2, "global"],
+    "quotes": "single",
+    curly: [2, "multi-line"],
+    "comma-dangle": [2, "never"],
+    "eqeqeq": [2, "smart"],
+    "strict": [2, "global"],
+    "new-cap": 0,
+    "indent": [2, 2],
+    "brace-style": [2, "1tbs"],
+    "no-else-return": 2,
+    "no-eval": 2,
+    "no-loop-func": 2,
+    "no-dupe-keys": 2,
+    "no-empty": 2,
+    "no-func-assign": 2,
+    "no-invalid-regexp": 2,
+    "no-irregular-whitespace": 2,
+    "no-console": 2,
+    "no-debugger": 2,
+    "no-lonely-if": 2,
+    "max-len": [2, 80, 2],
+    "no-trailing-spaces": 2,
+    "max-nested-callbacks": [2, 3],
+    "camelcase": 2,
+    "eol-last": 2,
+    "space-before-function-parentheses": [2, "never"],
+    "space-before-blocks": [2, "always"],
+    "space-after-keywords": [2, "always"]
+  },
+  "env": {
+    "node": true
+  }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+
+# ignore node_modules
+node_modules/
+
+# ignore log files
+*.log
+
+# ignore coverage directory
+coverage/
