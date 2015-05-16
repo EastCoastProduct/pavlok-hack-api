@@ -3,13 +3,12 @@
 var request = require('request');
 
 function webhook(req, res) {
-  console.log(req.body);
-
   var id = req.params.id;
   var type = req.params.type;
   var strength = req.params.strength;
 
-  var url = 'https://pavlok.herokuapp.com/api/' + id + '/' + type + '/' + strength;
+  var url = 'https://pavlok.herokuapp.com/api/'
+    + id + '/' + type + '/' + strength;
 
   if (req.body.build.status === 'error') {
     request
